@@ -1,0 +1,37 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.cat-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.cat-image-container img {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        display: block;
+    }
+    table thead {
+        display: none;
+      }
+}

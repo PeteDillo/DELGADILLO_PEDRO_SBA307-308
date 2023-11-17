@@ -7,8 +7,8 @@
 <!-- remove default styles  -->
 <link rel="stylesheet" href="../resources/normalized/normalize.css">
 <!-- import stylesheet -->
-<link rel="stylesheet" href="../styles/contact.css">
 <link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/cat.css">
 <!-- google fonts  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +20,24 @@
         <a href="cat.html">Cats</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <section class="email-form-container">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter to receive updates and exclusive offers.</p>
-
-        <form class="email-form">
-            <input type="email" placeholder="Enter your email address" class="email-input" required>
-            <button type="submit" class="email-submit-btn">Subscribe</button>
-        </form>
+    <section>
+        <table>
+            <thead>
+              <tr>
+                <th>Picture</th>
+                <th>Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cat-image-container"><img src="../resources/img/cat1.jpg" alt="Cat 1"></td>
+                <td>Whiskers</td>
+                <td>3 years</td>
+              </tr>
+            </tbody>
+          </table>
     </section>
-
-    <script src="../script/contact.js"></script>
+    <script src="../script/cat.js"></script>
 </body>
 </html>

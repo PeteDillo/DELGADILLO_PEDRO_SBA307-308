@@ -1,12 +1,12 @@
 (() => {
-  //subscribe button
-  //button will validate email after it is validated it will replace form in on screen with thank you for subscribing with your email
+  // subscribe button
+  // button will validate email after it is validated it will replace form in on screen with thank you for subscribing with your email
   const subButton = document.querySelector('.email-submit-btn');
   subButton.addEventListener('click', (event) => {
     // Prevent default form submission
     event.preventDefault();
 
-    //caputure form elements
+    // caputure form elements
     const emailInput = document.querySelector('.email-input');
     const formContainer = document.querySelector('.email-form-container');
     const form = document.querySelector(".email-form");
@@ -20,8 +20,8 @@
       alert('Please enter a valid email address.');
       return;
     }
-
     // Email is valid, proceed with subscription process
+
 
     // Simulate sending email subscription data to a server
     console.log('Sending email subscription data:', email);
