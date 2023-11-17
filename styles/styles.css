@@ -8,47 +8,108 @@ accent color orange #FE7F2D
 font color #ebebe1
 */
 
-
-
-
-
-body{
-    font-size: 16px;
-    background-color: #619B8A;
+body {
+  font-size: 16px;
+  background-color: #619b8a;
+  color: #ebebe1
 }
 /* navbar */
 .navbar {
-    background-color: #232E21;
-    color: #ebebe1;
-    box-shadow: 0 2px 5px #FE7F2D;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #232e21;
+  color: #ebebe1;
+  box-shadow: 0 2px 5px #fe7f2d;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  background-color: #a1c181;
+  border: none;
+  color: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* anchor tags */
+.navbar a:hover {
+  background-color: #fe7f2d;
+}
+
+.navbar a:active {
+  background-color: #fe7f2d;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
   }
-  
+
   .navbar a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+/* email page */
+
+/* email form */
+.email-form-container {
+    padding: 30px;
+    text-align: center;
+    background-color: #232e21;
+    margin: 4rem;
+}
+
+.email-form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+.email-form-container p {
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: inline-block;
+}
+
+.email-input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.email-submit-btn {
     background-color: #a1c181;
     border: none;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    background-color: #FE7F2D;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .navbar {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .navbar a {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
     }
-  }
+
+    .email-form {
+        display: block;
+        width: 100%;
+    }
+
+    .email-input {
+        width: 100%;
+    }
+}
