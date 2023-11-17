@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<!-- remove default styles  -->
-<link rel="stylesheet" href="../resources/normalized/normalize.css">
-<!-- import stylesheet -->
-<link rel="stylesheet" href="../styles/styles.css">
-<link rel="stylesheet" href="../styles/cat.css">
-<!-- google fonts  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- remove default styles  -->
+  <link rel="stylesheet" href="../resources/normalized/normalize.css">
+  <!-- import stylesheet -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/cat.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Condensed:wght@200&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar">
-        <a href="home.html">Home</a>
-        <a href="cat.html">Cats</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section>
-        <table>
-            <thead>
-              <tr>
-                <th>Picture</th>
-                <th>Name</th>
-                <th>Age</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="cat-image-container"><img src="../resources/img/cat1.jpg" alt="Cat 1"></td>
-                <td>Whiskers</td>
-                <td>3 years</td>
-              </tr>
-            </tbody>
-          </table>
-    </section>
-    <script src="../script/cat.js"></script>
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="cat.html">Cats</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section>
+    <article>
+      <form>
+        <input type="text" id="catName" name="catName" placeholder="Enter cat name">
+        <input type="number" id="catAge" name="catAge" placeholder="Enter cat age">
+        <input type="text" id="catImage" name="catImage" placeholder="Enter cat image URL">
+        <select id="catShelter" name="catShelter">
+          <option value="ABC Shelter">ABC Shelter</option>
+          <option value="Shelter Shelter">Shelter Shelter</option>
+          <option value="US Shelter">US Shelter</option>
+        </select>
+        <button id="catSubmit" type="submit">Add Cat</button>
+      </form>
+    </article>
+    <table>
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+  <script src="../script/cat.js" type="module"></script>
 </body>
+
 </html>

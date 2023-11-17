@@ -32,6 +32,7 @@ body {
   color: inherit;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 4px;
   text-decoration: none;
 }
 /* anchor tags */
