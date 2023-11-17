@@ -21,7 +21,7 @@ body {
 .navbar {
   background-color: #232e21;
   color: #202619;
-  box-shadow: 0 2px 5px #fe7f2d;
+  box-shadow: 0 2px 5px #000000;
   font-size: 18px;
   padding: 10px 20px;
   display: flex;
