@@ -1,0 +1,54 @@
+/* 
+navbar color/box shadow color #232e21
+primary color #619B8A
+secondary color #a1c181
+accent color yellow #FCCA46
+accent color orange #FE7F2D
+
+font color #ebebe1
+*/
+
+
+
+
+
+body{
+    font-size: 16px;
+    background-color: #619B8A;
+}
+/* navbar */
+.navbar {
+    background-color: #232E21;
+    color: #ebebe1;
+    box-shadow: 0 2px 5px #FE7F2D;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    background-color: #a1c181;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #FE7F2D;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
