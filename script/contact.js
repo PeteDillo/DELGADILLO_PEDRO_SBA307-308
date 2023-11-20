@@ -1,3 +1,4 @@
+//IIFE
 (() => {
   // subscribe button
   // button will validate email after it is validated it will replace form in on screen with thank you for subscribing with your email

@@ -1,4 +1,5 @@
 import landingPageData from '../DATA/MAINCONTENT.JS';
+//IIFE
 (() => {
   const content = document.querySelector('.content-container');
 
@@ -22,7 +23,7 @@ import landingPageData from '../DATA/MAINCONTENT.JS';
   const addCardToDOM = (section) =>{
     content.appendChild(section)
   };
-  //s
+  //start the flow of the script
   for (const imageData of landingPageData) {
     cardCreation(imageData);
   }
