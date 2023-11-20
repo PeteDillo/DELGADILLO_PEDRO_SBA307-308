@@ -17,3 +17,5 @@ The project is structured using a component-based approach, with each component 
 * **HTML:** HyperText Markup Language, the foundation of web pages, used to define the content and structure of the website.
 * **CSS:** Cascading Style Sheets, responsible for the styling and presentation of the website's elements.
 * **JavaScript:** A scripting language used to add interactivity and dynamic behavior to the website.
+
+[Link to Github Repo](https://github.com/PeteDillo/DELGADILLO_PEDRO_SBA307-308)
