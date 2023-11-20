@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<!-- remove default styles  -->
-<link rel="stylesheet" href="../resources/normalized/normalize.css">
-<!-- import stylesheet -->
-<link rel="stylesheet" href="../styles/styles.css">
-<!-- google fonts  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+    <!-- remove default styles  -->
+    <link rel="stylesheet" href="../resources/normalized/normalize.css">
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+    <!-- internal styling  -->
+    <style>
+        .content-container {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #FE7F2D;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        h2 {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 36px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+        }
+
+        .card {
+            border: 1px solid #FE7F2D;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            height: 100%;
+            min-height: 200px;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="home.html">Home</a>
         <a href="cat.html">Cats</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <h2>Cat Content For Your Enjoyment!</h2>
+    <section class="content-container">
 
-    <script src="../script/script.js" type="module"></script>
+    </section>
+    <script src="../script/home.js" type="module"></script>
 </body>
+
 </html>

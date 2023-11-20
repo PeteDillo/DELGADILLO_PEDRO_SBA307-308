@@ -1,3 +1,4 @@
+//json collection
 const DATA = [
   {
     img: '../resources/img/cat1.jpg',
